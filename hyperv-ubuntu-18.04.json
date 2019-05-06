@@ -1,8 +1,8 @@
 {
   "variables": {
     "vm_name": "ubuntu-bionic",
-    "cpu": "2",
-    "ram_size": "2048",
+    "cpus": "2",
+    "memory": "2048",
     "disk_size": "21440",
     "iso_url": "http://cdimage.ubuntu.com/ubuntu/releases/bionic/release/ubuntu-18.04.2-server-amd64.iso",
     "iso_checksum_type": "sha256",
@@ -40,8 +40,8 @@
       "boot<enter>"
     ],
     "shutdown_command": "echo 'vagrant' | sudo -S -E shutdown -P now",
-    "ram_size": "{{user `ram_size`}}",
-    "cpu": "{{user `cpu`}}",
+    "memory": "{{user `memory`}}",
+    "cpus": "{{user `cpus`}}",
     "generation": 2,
     "switch_name":"{{user `hyperv_switchname`}}",
     "secure_boot_template": "MicrosoftUEFICertificateAuthority",
